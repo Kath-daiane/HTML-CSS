@@ -1,0 +1,96 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo um fundo e uma cor padrão para o texto */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E7F3F6; /* Cor de fundo suave */
+    color: #272626;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilizando o header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #006D77; /* Cor do título */
+    margin-bottom: 15px;
+}
+
+header img {
+    width: 90px;
+    height: 90px;
+    margin: 0 10px;
+}
+
+/* Estilizando o main */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #E7F3F6; /* Cor de fundo do main */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilizando as seções */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 28px;
+    color: #272626;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Estilo para os parágrafos dentro de balões */
+section p {
+    font-size: 16px;
+    color: #555;
+    background-color: #B8DEDC; /* Cor de fundo suave */
+    border: 2px solid #006D77; /* Borda do balão */
+    border-radius: 12px;
+    padding: 20px;
+    margin-right: 20px; /* Margem direita */
+    margin-left: 0; /* Alinhando à esquerda */
+    position: relative;
+}
+
+/* Adicionando cor à margem direita dos balões */
+section p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #006D77; /* Triângulo para criar o "balão" */
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transform: translateY(-50%);
+}
+
+/* Estilizando o footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #777;
+    background-color: #E7F3F6; /* Cor de fundo do footer */
+}
+
+footer p {
+    margin: 0;
+}
