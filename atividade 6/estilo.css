@@ -1,0 +1,93 @@
+/* estilo.css */
+
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to bottom, #e0d8f7, #f5f0ff);
+    margin: 0;
+    padding: 0;
+    color: #4b306a;
+}
+
+header {
+    background-color: #c8a2c8;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #a173a1;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    right: -12px;
+    bottom: -12px;
+    border-radius: 35px;
+    background: radial-gradient(circle at top left, #ffffff80, transparent),
+                radial-gradient(circle at bottom right, #ffffff80, transparent);
+    z-index: -1;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #ffffffcc;
+    padding: 30px;
+    border: 4px double #b08fcc;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+}
+
+h1, h2 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    color: #6a2c91;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+blockquote {
+    position: relative;
+    background: #f0e5ff;
+    border-left: 5px solid #b98ae0;
+    margin: 20px 0;
+    padding: 15px 20px;
+    font-style: italic;
+    border-radius: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+blockquote::before {
+    content: "“";
+    font-size: 40px;
+    color: #b98ae0;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #c8a2c8;
+    color: white;
+    border-top: 4px solid #a173a1;
+    display: grid; place-items: center; height: 100px;
+}
+
