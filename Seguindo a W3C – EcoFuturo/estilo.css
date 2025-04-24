@@ -1,0 +1,120 @@
+/* style.css */
+
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f6fff9; /* fundo verde muito claro */
+    color: #2f4f4f;
+    line-height: 1.6;
+    padding: 0 1rem;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #d0f0c0; /* verde pastel */
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+    color: #2e7d32; /* verde escuro suave */
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #388e3c;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1b5e20;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+main h2 {
+    color: #66bb6a;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+main p {
+    color: #4f4f4f;
+    margin-bottom: 1rem;
+}
+
+/* Cards de projetos */
+.projeto-card {
+    background-color: #e1f5e2; /* verde acinzentado claro */
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+}
+
+.projeto-card h3 {
+    color: #43a047;
+    margin-bottom: 0.5rem;
+}
+
+.projeto-card a {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.projeto-card a:hover {
+    color: #1b5e20;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #c8e6c9; /* verde suave */
+    color: #2e7d32;
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: #388e3c;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #1b5e20;
+}
