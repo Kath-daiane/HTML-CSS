@@ -1,0 +1,148 @@
+/* Estilo CSS para o projeto BiblioSmart */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #121212;
+    color: #f5f5dc;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #1c1c1c;
+    padding: 30px 20px;
+    border-bottom: 2px solid #d4af37;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    color: #d4af37;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: #d4af37;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: #d4af37;
+    color: #121212;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 960px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 50px;
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-left: 5px solid #d4af37;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    color: #d4af37;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #d4af37;
+    padding-bottom: 5px;
+    line-height: 1.5;
+}
+
+ul, ol {
+    margin-left: 25px;
+    margin-top: 10px;
+    line-height: 1.8; /* Melhor espaçamento para listas */
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.8; /* Maior espaçamento entre parágrafos */
+}
+
+/* Botão */
+.botao-acao {
+    background-color: #d4af37;
+    color: #121212;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar o botão */
+}
+
+.botao-acao:hover {
+    background-color: #b8962f;
+    color: #fff;
+    transform: scale(1.10); /* Leve aumento de tamanho */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Sombra mais forte no hover */
+}
+
+/* Imagem de introdução */
+.imagem-introducao {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer fixo */
+footer {
+    background-color: #1a1a1a;
+    color: #f5f5dc;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    border-top: 2px solid #d4af37;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    nav {
+        justify-content: flex-end;
+    }
+}
