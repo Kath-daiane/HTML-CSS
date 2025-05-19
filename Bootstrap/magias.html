@@ -1,30 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Magias | Encantos da Noite</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    .btn-custom {
+      background-color: #6c757d;
+      color: white;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+    .btn-custom:hover {
+      background-color: #495057;
+      color: white;
+    }
+  </style>
 </head>
-<body>
-    <section id="magias">
-        <h2>🔮 Magias</h2>
-        <p>No <strong>Encantos da Noite</strong>, acreditamos na força da intenção, do tempo certo e do uso sábio dos elementos. Nossas magias são simples, naturais e conectadas com o fluxo da Terra.</p>
-      
-        <article>
-          <h3>Amarração de Afeto (com pétalas de rosa)</h3>
-          <p>Uma magia suave para fortalecer laços afetivos. Ideal para casais em reconciliação ou amizades distantes. Deve ser feita na Lua Cheia.</p>
-        </article>
-      
-        <article>
-          <h3>Banho de Proteção com Sal Grosso e Arruda</h3>
-          <p>Feito na Lua Minguante, este banho remove cargas negativas, inveja e mau-olhado. Recomenda-se repetir por três dias consecutivos.</p>
-        </article>
-      
-        <article>
-          <h3>Feitiço da Prosperidade com Canela</h3>
-          <p>Assoprar canela em pó na porta de entrada na primeira sexta-feira do mês, pensando em abundância e fartura, atrai energia de crescimento e prosperidade.</p>
-        </article>
-      </section>
-      
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+    <div class="container py-4">
+      <a class="navbar-brand fw-bold fs-3" href="index.html">Encantos da Noite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="ancestralidade.html">Ancestralidade</a></li>
+          <li class="nav-item"><a class="nav-link" href="chas-e-aguas.html">Chás & Águas Medicinais</a></li>
+          <li class="nav-item"><a class="nav-link" href="banhos-de-ervas.html">Banhos Energéticos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="magias.html">Magias</a></li>
+          <li class="nav-item"><a class="nav-link" href="fases-da-lua.html">Fases da Lua</a></li>
+        </ul>
+        <form class="d-flex" role="search" method="GET" action="#">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" name="q" />
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main class="flex-fill container py-5">
+    <h1 class="mb-4 text-center">Magias e Feitiços da Natureza</h1>
+    <p class="lead text-center mb-5">
+      As magias naturais são poderosas práticas para harmonizar, proteger e atrair o que você deseja em sua vida.
+    </p>
+
+    <div class="row gy-4">
+      <div class="col-md-6">
+        <h3>Magia da Prosperidade</h3>
+        <p>Use velas verdes, alecrim e manjericão para atrair abundância e prosperidade ao seu lar.</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Magia da Proteção</h3>
+        <p>Banhos com arruda e guiné são indicados para afastar energias negativas e proteger sua aura.</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Magia do Amor</h3>
+        <p>Use rosas vermelhas, canela e mel para atrair amor verdadeiro e fortalecer relacionamentos.</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Magia da Cura</h3>
+        <p>Chás de camomila e erva-doce ajudam na tranquilidade emocional e na cura interior.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center p-4 mt-auto">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <h5 class="mb-3">Encantos da Noite</h5>
+          <p>Magia Natural e Sabedoria Ancestral. Transforme sua vida com as energias da natureza.</p>
+        </div>
+        <div class="col-md-3 mb-3 mb-md-0">
+          <h5 class="mb-3">Links úteis</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none">Página Inicial</a></li>
+            <li><a href="ancestralidade.html" class="text-white text-decoration-none">Ancestralidade</a></li>
+            <li><a href="chas-e-aguas.html" class="text-white text-decoration-none">Chás & Águas Medicinais</a></li>
+            <li><a href="banhos-de-ervas.html" class="text-white text-decoration-none">Banhos Energéticos</a></li>
+            <li><a href="magias.html" class="text-white text-decoration-none">Magias</a></li>
+            <li><a href="fases-da-lua.html" class="text-white text-decoration-none">Fases da Lua</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="mb-3">Contato</h5>
+          <p><i class="bi bi-geo-alt-fill me-2"></i>Rua Alberto Ribas, 123</p>
+          <p><i class="bi bi-telephone-fill me-2"></i>(11) 1234-5678</p>
+          <p><i class="bi bi-envelope-fill me-2"></i>contato@exemplo.com</p>
+        </div>
+      </div>
+      <div class="mt-3 small">
+        &copy; 2025 Encantos da Noite. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
