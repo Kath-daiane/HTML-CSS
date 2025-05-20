@@ -1,0 +1,54 @@
+/* Reset CSS */
+body{
+    
+    margin: 0;
+   
+}
+header{
+    background-color: #051A20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+    
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.itens-nav{
+    display: none;
+}
+
+
+
+@media (min-width: 768px) {
+    .itens-nav{
+        display: inline;
+    }
+
+    .menu-hamburguer{
+        display: none;
+    }
+
+    nav ul li {
+        margin: 0 1rem;
+    }
+
+header nav ul{
+    display: flex;
+    gap: 20px;
+}
+}
