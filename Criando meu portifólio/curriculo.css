@@ -5,7 +5,46 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Cores suaves e elegantes */
+:root {
+    --rosa-suave: #f8bbd0;
+    --rosa-escuro: #c2185b;
+    --rosa-hover: #e91e63;
+  }
+  
+  /* Estilo do cabeçalho */
+  .custom-header {
+    background: linear-gradient(90deg, #fce4ec, #f8bbd0);
+    border-bottom: 2px solid #f48fb1;
+  }
+  
+  /* Estilo da marca */
+  .navbar-brand {
+    color: var(--rosa-escuro);
+    text-decoration: none;
+  }
+  
+  .navbar-brand:hover {
+    color: var(--rosa-hover);
+  }
+  
+  /* Links da navegação */
+  .link-pink {
+    color: var(--rosa-escuro);
+    font-weight: 500;
+    margin-left: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .link-pink:hover,
+  .link-pink.active {
+    color: #fff;
+    background-color: var(--rosa-hover);
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+  }
+  
+  
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff8f6;
@@ -19,6 +58,67 @@ header {
     background-color: #fce4ec;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    header.bg-gradient {
+
+    background: linear-gradient(90deg, #d6336c 0%, #6f42c1 100%);
+      }
+      
+      header .navbar-brand {
+        color: #fff;
+      }
+      
+      header .nav-link {
+        color: #f8f9fa;
+        transition: color 0.3s;
+      }
+      
+      header .nav-link:hover {
+        color: #ffc107;
+      }
+      
+      footer {
+        background-color: #212529;
+      }
+      
+    /* Cores suaves e elegantes */
+:root {
+  --rosa-suave: #f8bbd0;
+  --rosa-escuro: #c2185b;
+  --rosa-hover: #e91e63;
+}
+
+/* Estilo do cabeçalho */
+.custom-header {
+  background: linear-gradient(90deg, #fce4ec, #f8bbd0);
+  border-bottom: 2px solid #f48fb1;
+}
+
+/* Estilo da marca */
+.navbar-brand {
+  color: var(--rosa-escuro);
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  color: var(--rosa-hover);
+}
+
+/* Links da navegação */
+.link-pink {
+  color: var(--rosa-escuro);
+  font-weight: 500;
+  margin-left: 1rem;
+  transition: color 0.3s;
+}
+
+.link-pink:hover,
+.link-pink.active {
+  color: #fff;
+  background-color: var(--rosa-hover);
+  border-radius: 20px;
+  padding: 0.3rem 1rem;
+}
+
 }
 
 nav .menu {

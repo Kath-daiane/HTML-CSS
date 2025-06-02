@@ -1,45 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Praias</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
 </head>
 <body class="bg-white text-dark pb-5">
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Viagens Incríveis</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <a class="navbar-brand fw-bold" href="index.html">Viagens Incríveis</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Alternar navegação"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="praias.html">Praias</a></li>
-          <li class="nav-item"><a class="nav-link" href="capitais.html">Capitais</a></li>
-          <li class="nav-item"><a class="nav-link" href="cidades-historicas.html">Cidades Históricas</a></li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="praias.html"
+              >Praias</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="capitais.html">Capitais</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cidades-historicas.html"
+              >Cidades Históricas</a
+            >
+          </li>
         </ul>
       </div>
     </div>
   </nav>
+
   <main class="container mt-5">
-    <h1 class="mb-4 text-center">Praias Brasileiras</h1>
-    <div class="row text-center">
-      <div class="col-md-6 mb-4">
-        <h3>Fernando de Noronha</h3>
-        <img src="fernando-de-noronha.jpg" alt="Fernando de Noronha" width="500" height="250">
-      </div>
-      <div class="col-md-6 mb-4">
-        <h3>Praia do Rosa</h3>
-        <img src="praia-do-rosa.jpg" alt="Praia do Rosa" width="500" height="250">
-      </div>
+    <h1 class="mb-5 text-center fw-bold">Praias Brasileiras</h1>
+    <div class="row g-4">
+      <article class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <img
+            src="fernando-de-noronha.jpg"
+            class="card-img-top"
+            alt="Fernando de Noronha"
+            loading="lazy"
+            width="500"
+            height="250"
+            style="object-fit: cover;"
+          />
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title">🌴 Descubra Fernando de Noronha 🌴</h3>
+            <p class="card-text flex-grow-1">
+              Um paraíso ecológico no coração do Atlântico, com praias
+              deslumbrantes, águas cristalinas e experiências inesquecíveis.
+              Mergulhe com golfinhos, caminhe por trilhas naturais e relaxe sob
+              o pôr do sol mais bonito do Brasil.
+            </p>
+            <p class="card-text fw-semibold text-primary">
+              O paraíso está mais perto do que você imagina. Viva Noronha!
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <img
+            src="praia-do-rosa.jpg"
+            class="card-img-top"
+            alt="Praia do Rosa"
+            loading="lazy"
+            width="500"
+            height="250"
+            style="object-fit: cover;"
+          />
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title">🌊 Encante-se com a Praia do Rosa 🌊</h3>
+            <p class="card-text flex-grow-1">
+              Localizada em Santa Catarina, a Praia do Rosa é um refúgio charmoso
+              entre montanhas, natureza preservada e mar aberto. Conhecida por
+              sua vibe única, atrai surfistas, casais, famílias e amantes da
+              natureza.
+            </p>
+            <p class="card-text flex-grow-1">
+              Com lagoas, trilhas, pousadas aconchegantes e excelente
+              gastronomia, o Rosa é perfeito para relaxar e se reconectar com o
+              essencial.
+            </p>
+            <p class="card-text fw-semibold text-primary">
+              Natureza, charme e liberdade — viva o Rosa!
+            </p>
+          </div>
+        </div>
+      </article>
     </div>
   </main>
-  <footer class="bg-light text-center text-dark fixed-bottom py-2">
+
+  <footer
+    class="bg-light text-center text-dark fixed-bottom py-2 border-top"
+    aria-label="Rodapé"
+  >
     <div class="container">
       <small>&copy; 2025 Viagens Incríveis. Todos os direitos reservados.</small>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
 </body>
 </html>
